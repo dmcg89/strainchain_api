@@ -1,6 +1,6 @@
 env/
 .idea/
-credentials.json
+credentials.js
 .env
 .images/
 *.pyc
