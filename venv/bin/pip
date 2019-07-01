@@ -1,4 +1,4 @@
-#!/Users/drew/dev/courses/dapps/dapps_project/strainbase_v2/metadata-api/venv/bin/python2.7
+#!/Users/drew/dev/courses/dapps/dapps_project/metadata-api/venv/bin/python2.7
 # -*- coding: utf-8 -*-
 import re
 import sys

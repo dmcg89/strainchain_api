@@ -150,7 +150,7 @@ def _compose_image(token_id, path="token"):
 
 def _get_bucket():
     credentials = service_account.Credentials.from_service_account_file(
-        'credentials.json')
+        'credentials/google-storage-credentials.json')
     if credentials.requires_scopes:
         credentials = credentials.with_scopes(
             ['https://www.googleapis.com/auth/devstorage.read_write'])

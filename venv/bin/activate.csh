@@ -10,7 +10,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/drew/dev/courses/dapps/dapps_project/strainbase_v2/metadata-api/venv"
+setenv VIRTUAL_ENV "/Users/drew/dev/courses/dapps/dapps_project/metadata-api/venv"
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"
