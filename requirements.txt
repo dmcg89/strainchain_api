@@ -51,6 +51,7 @@ google-cloud-storage==1.16.1
 google-resumable-media==0.3.2
 googleapis-common-protos==1.5.10
 greenlet==0.4.15
+gunicorn==19.9.0
 h5py==2.9.0
 heapdict==1.0.0
 html5lib==1.0.1
