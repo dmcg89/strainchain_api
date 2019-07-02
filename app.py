@@ -6,6 +6,7 @@ import mimetypes
 
 from flask import Flask
 from flask import jsonify
+from flask import render_template
 
 from google.cloud import storage
 from google.oauth2 import service_account
@@ -24,6 +25,23 @@ app = Flask(__name__)
 
 
 STRAINS = ['Sour Diesel', 'Alaskan Thunderfuck', 'OG', 'Trainwreck', 'Girlscout Cookies']
+@app.route('/api/<name>')
+@app.route('/api/<int:token_id>')
+@app.route('/api/')
+def home_route(name=None, token_id=None):
+    if token_id is not None:
+        token_id = int(token_id)
+        # image_url = _compose_image(token_id)
+
+        # num_first_names = len(FIRST_NAMES)
+        # num_last_names = len(LAST_NAMES)
+        num_strains = len(STRAINS)
+        strain_name = "%s" % (STRAINS[token_id % num_strains])
+        strain_name = "%s" % (STRAINS[token_id % num_strains])
+        
+        return render_template('index.html', name=strain_name)
+    else:
+        return render_template('index.html', name=name)
 
 @app.route('/api/token/<token_id>')
 def token(token_id):
