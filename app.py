@@ -46,6 +46,7 @@ def home_route(name=None, token_id=None):
 @app.route('/api/token/<token_id>')
 def token(token_id):
     token_id = int(token_id)
+    print('found')
     image_url = _compose_image(token_id)
 
     # num_first_names = len(FIRST_NAMES)
